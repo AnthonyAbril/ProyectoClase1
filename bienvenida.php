@@ -7,7 +7,8 @@
 <body>
  <h1>Página de bienvenida</h1>
  <?php
- echo "<p>Bienvenido a esta página</p>";
+    echo "<p>Bienvenido a esta página</p>";
+    print("<p>Bienvenido a esta página</p>");
  ?>
 </body>
 </html>

@@ -25,14 +25,25 @@
 
         switch ($nmayor)
         {
-            case 0:
-                echo "La variable es 0";
+            case 0;
+            case 1;
+            case 2;
+            case 3;
+            case 4:
+                echo "<br>INSUFICIENTE</br>";
                 break;
-            case 1:
-                echo "La variable es 1";
+            case 5:
+                echo "<br>SUFICIENTE</br>";
+                break;
+            case 6:
+                echo "<br>BIEN</br>";
+                break;
+            case 7:
+            case 8:
+                echo "<br>NOTABLE</br>";
                 break;
             default:
-                echo "La variable es otra cosa";
+                echo "SOBRESALIENTE ";
         }
 
     ?>

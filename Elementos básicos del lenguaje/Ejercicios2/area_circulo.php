@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Ejercicio1</title>
+        <title>Ejercicio2</title>
     </head>
     <body>
         <h1>Página de prueba en PHP</h1>

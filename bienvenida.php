@@ -9,6 +9,7 @@
  <?php
     echo "<p>Bienvenido a esta página</p>", "<a>holi</a>";
     print("<p>Bienvenido a esta página</p>");
+    phpinfo();
  ?>
 </body>
 </html>

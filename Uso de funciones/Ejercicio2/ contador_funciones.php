@@ -19,6 +19,17 @@
             echo $a;
         }
 
+        function cuenta2($primero, $segundo, $salto=1){
+            ($salto==0) ? $salto++:$salto=$salto;
+            $a=$primero;
+            while($a!=$segundo){
+                
+                echo $a,",";
+                ($primero>$segundo) ? $a-- : $a++;
+            }
+            echo $a;
+        }
+
         cuenta(10, 20);
     ?>
 </body>

@@ -9,9 +9,7 @@
     <h1>Página de prueba en PHP</h1>
     <?php
         function cuenta($primero, $segundo, $salto=1){
-            if ($salto==0){
-                $salto++;
-            }
+            ($salto==0) ? $salto++:$salto=$salto;
             if($primero>$segundo){
                 for($a=$primero;$a>=$segundo;$a-=$salto){
                     if($a!=$primero){

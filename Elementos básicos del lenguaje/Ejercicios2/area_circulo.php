@@ -4,7 +4,7 @@
         <title>Ejercicio2</title>
     </head>
     <body>
-        <h1>Página de prueba en PHP</h1>
+        <h1>Ejercicio2</h1>
         <?php
             $radio = 3.5;
             const Pi = 3.1416;

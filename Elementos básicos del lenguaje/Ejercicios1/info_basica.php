@@ -4,7 +4,7 @@
         <title>Ejercicio1</title>
     </head>
     <body>
-        <h1>Página de prueba en PHP</h1>
+        <h1>Ejercicio1</h1>
         <?php
             // Variables para almacenar el nombre y el año actual
             $nombre = "Anthony Abril";

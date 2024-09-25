@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejercicio3</title>
 </head>
 <body>        
-    <h1>Página de prueba en PHP</h1>
+    <h1>Ejercicio3</h1>
     <?php
         $num1 = 3;
         $num2 = 5;

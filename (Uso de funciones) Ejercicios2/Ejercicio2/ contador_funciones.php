@@ -8,29 +8,25 @@
 <body>
     <h1>Página de prueba en PHP</h1>
     <?php
-
+        
         function cuenta($primero, $segundo){
+            echo "<p>Del ",$primero," al ",$segundo,"</p>";
+            $creciente = ($primero>$segundo);
+            
             $a=$primero;
-            while($a!=$segundo){
+
+            echo $primero;
+            while($creciente ? $a>$segundo : $a<$segundo){
                 
-                echo $a,",";
-                ($primero>$segundo) ? $a-- : $a++;
+                $creciente ? $a-- : $a++;
+                if($creciente ? $a>$segundo : $a<$segundo){
+                    echo ",",$a;
+                }
             }
-            echo $a;
+            echo ",",$segundo;
         }
 
-        function cuenta2($primero, $segundo, $salto=1){
-            ($salto==0) ? $salto++:$salto=$salto;
-            $a=$primero;
-            while($a!=$segundo){
-                
-                echo $a,",";
-                ($primero>$segundo) ? $a-- : $a++;
-            }
-            echo $a;
-        }
-
-        cuenta(10, 20);
+        cuenta(10, 20, 4);
     ?>
 </body>
 </html>

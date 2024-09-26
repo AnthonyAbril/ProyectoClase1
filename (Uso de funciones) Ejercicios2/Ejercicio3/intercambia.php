@@ -9,7 +9,7 @@
     <h1>Página de prueba en PHP</h1>
     <?php
         
-        function cuenta($primero, $segundo){
+        function intercambia($primero, $segundo){
             echo "<p>Del ",$primero," al ",$segundo,"</p>";
             $creciente = ($primero>$segundo);
             
@@ -26,7 +26,7 @@
             echo ",",$segundo;
         }
 
-        cuenta(10, 20);
+        intercambia(10, 20);
     ?>
 </body>
 </html>

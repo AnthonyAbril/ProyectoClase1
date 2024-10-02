@@ -8,7 +8,9 @@
 <body>
     <h1>Página de prueba en PHP</h1>
     <?php
-        
+        //Saca en la página la fecha y hora actuales en un formato como este:
+        //07 Mar 2022 - 21:55:12
+
         function calculaTiempoTranscurrido($segundos) {
             $anyos = intdiv($segundos, 31536000);
             $restoAnyos = $segundos % 31536000;

@@ -7,25 +7,33 @@
 </head>
 <body>
     <?php
-        function detectaEmail(){
-            $fichero1 = "datos.txt";
-            $fichero2 = "copia_datos.txt";
+        function modificaEmail($fichero1, $fichero2){
 
             if (file_exists($fichero1)){
 
-                $contenido = file($fichero1);
-
-                echo "Nombre: ". $contenido[0].
-                '<br>'. "Calle: ". $contenido[1].
-                '<br>'. "Numero: ". $contenido[2];
+                
+                $contenido2 = file_get_contents($fichero1);
+                $contenido2 = preg_replace("/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/","emailfalso@hotmail.com",$contenido2);
+                file_put_contents($fichero2, $contenido2);
             }
         }
 
-        detectaEmail();
+        /*
+        function organizarDatos($fichero, $datos){
+            if (file_exists($fichero)){
+
+                $contenido = file($fichero);
+
+                file_put_contents($fichero2 , "Nombre: ". $contenido[0].
+                "\nCalle: ". $contenido[1].
+                "\nNumero: ". $contenido[2].
+                "\nEmail: ". $contenido[3]);
+            }
+        }
+        */
+
+        modificaEmail("datos.txt", "copia_datos.txt");
     
     ?>
 </body>
 </html>
-
-parametros para encontrar el email:
-{3,}@{3,}\.[A-Za-b]{2,4}

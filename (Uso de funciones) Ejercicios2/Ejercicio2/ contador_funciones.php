@@ -8,24 +8,7 @@
 <body>
     <h1>Página de prueba en PHP</h1>
     <?php
-        
-        function cuenta($primero, $segundo){
-            echo "<p>Del ",$primero," al ",$segundo,"</p>";
-            $creciente = ($primero>$segundo);
-            
-            $a=$primero;
-
-            echo $primero;
-            while($creciente ? $a>$segundo : $a<$segundo){
-                
-                $creciente ? $a-- : $a++;
-                if($creciente ? $a>$segundo : $a<$segundo){
-                    echo ",",$a;
-                }
-            }
-            echo ",",$segundo;
-        }
-
+        include("../funciones.inc");
         cuenta(10, 20);
     ?>
 </body>

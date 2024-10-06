@@ -32,7 +32,7 @@
             $fechaFormatoCorrecto = $compruebaFecha[1] . "/" . $compruebaFecha[0] . "/" . $compruebaFecha[2];
             $nacimientoTime = strtotime();
 
-            $edad = $fechaActual 
+            $edad = $fechaActual
         }
         
     ?>

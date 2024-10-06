@@ -8,25 +8,20 @@
 <body>
     <h1>Página de prueba en PHP</h1>
     <?php
+        include "../funciones.inc";
+        $n1=3;
+        $n2=5;
+
+        echo " n1 = ", $n1;
+        echo " n2 = ", $n2;
+        echo '</br>';
+
         
-        function intercambia($primero, $segundo){
-            echo "<p>Del ",$primero," al ",$segundo,"</p>";
-            $creciente = ($primero>$segundo);
-            
-            $a=$primero;
 
-            echo $primero;
-            while($creciente ? $a>$segundo : $a<$segundo){
-                
-                $creciente ? $a-- : $a++;
-                if($creciente ? $a>$segundo : $a<$segundo){
-                    echo ",",$a;
-                }
-            }
-            echo ",",$segundo;
-        }
+        intercambia($n1, $n2);
 
-        intercambia(10, 20);
+        echo "  n1 = ", $n1;
+        echo " n2 = ", $n2;
     ?>
 </body>
 </html>

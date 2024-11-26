@@ -1,0 +1,13 @@
+json_encode()
+json_decode()
+acceso a ficheros
+control de excepciones
+POO(clases)
+Metodos y Clases estaticos
+separar los ficheros
+Modelo vista controlador
+Sesiones
+Cookies -> parametros
+Formulario -> POST
+Comprobar formulario -> isset, isempty
+include

@@ -30,7 +30,7 @@
             echo "<p>Lenguajes seleccionados:</p>";
             echo "<ul>";
             foreach ($lenguajes as $lenguajes) {
-                echo "<li>" . htmlspecialchars($lenguajes) . "</li>";
+                echo "<li>" . htmlspecialchars($lenguajes) . "</li>";//htmlspecialchars
             }
             echo "</ul>";
         } else {

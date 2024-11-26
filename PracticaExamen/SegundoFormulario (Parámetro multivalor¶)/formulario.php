@@ -7,22 +7,30 @@
 </head>
 <body>
     <?php
+    /*Forma basica
+    $lenguajes = $_GET["lenguajes"]; //guarda el array
+
+    //recorre el array guardado
+    foreach ($lenguajes as $lenguaje) {
+        echo "$lenguaje <br />";
+    }
+    */
+
+    
+
     // Verificar si se ha enviado el formulario (los datos se procesen solo si se envió el formulario)
     if (isset($_GET['enviar'])) {
-        // Obtener el nombre del alumno
-        $nombre = isset($_GET['nombre']) ? htmlspecialchars($_GET['nombre']) : 'Sin nombre';
 
-        // Obtener los módulos seleccionados
-        $modulos = isset($_GET['modulos']) ? $_GET['modulos'] : [];
+        // Obtener los lenguajes seleccionados
+        $lenguajes = isset($_GET['lenguajes']) ? $_GET['lenguajes'] : [];
 
         echo "<h1>Datos recibidos:</h1>";
-        echo "<p>Nombre del alumno: $nombre</p>";
 
-        if (!empty($modulos)) {
-            echo "<p>Módulos seleccionados:</p>";
+        if (!empty($lenguajes)) {
+            echo "<p>Lenguajes seleccionados:</p>";
             echo "<ul>";
-            foreach ($modulos as $modulo) {
-                echo "<li>" . htmlspecialchars($modulo) . "</li>";
+            foreach ($lenguajes as $lenguajes) {
+                echo "<li>" . htmlspecialchars($lenguajes) . "</li>";
             }
             echo "</ul>";
         } else {

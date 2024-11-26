@@ -7,6 +7,14 @@
 </head>
 <body>
     <?php
+    /*Forma basica
+    //Verificar si se ha enviado el parametro
+    if (isset($_GET["parametro"])) {
+        $par = $_GET["parametro"];  //si se ha enviado lo recoge
+        //despues se deberian hacer comprobaciones de que par tiene el formato adecuado
+    }
+    */
+
     // Verificar si se ha enviado el formulario (los datos se procesen solo si se envió el formulario)
     if (isset($_GET['enviar'])) {
         // Obtener el nombre del alumno

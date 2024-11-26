@@ -2,11 +2,8 @@ json_encode()
 json_decode()
 Modelo vista controlador
 
-include
 acceso a ficheros
 separar los ficheros
-POO(clases)
-Metodos y Clases estaticos
 control de excepciones
 
 ---------- Repasados ----------
@@ -15,3 +12,6 @@ Sesiones
 Cookies -> parametros
 Formulario -> POST
 Comprobar formulario -> isset, isempty
+POO(clases)
+Metodos y Clases estaticos
+include

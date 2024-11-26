@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    // Verificar si se ha enviado el formulario
+    // Verificar si se ha enviado el formulario (los datos se procesen solo si se envió el formulario)
     if (isset($_GET['enviar'])) {
         // Obtener el nombre del alumno
         $nombre = isset($_GET['nombre']) ? htmlspecialchars($_GET['nombre']) : 'Sin nombre';

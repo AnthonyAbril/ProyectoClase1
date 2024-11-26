@@ -9,6 +9,8 @@
     <?php
         $accesosPagina = 0;
         setcookie("accesos", $accesosPagina); // creamos una cookie
+        //setcookie(nombre, valor, time() + 3600) // cookie que caducaria dentro de una hora
+
 
         //si existe la cookie accesos
         if (isset($_COOKIE['accesos'])) { 
